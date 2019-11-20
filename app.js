@@ -18,10 +18,10 @@ mongoose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true });
 app.use(require('./router/user'));
 
 app.post('/test', (req, res) => {
-    res.send({ data: req.body });
+	res.send({ data: req.body });
 })
 
 
 app.listen(3000, () => {
-    console.log("app is running on PORT 3000 ")
+	console.log("app is running on PORT 3000 ")
 })
